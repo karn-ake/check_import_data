@@ -19,5 +19,7 @@ func main() {
 	})
 	muxRouter.GET("/api/securityupdated", msctrl.GetSecurity)
 	muxRouter.GET("/api/securityupdatedbystkcode/{stkcode}", msctrl.GetSecuritybyStkCode)
+	muxRouter.GET("/api/foreignupdated", msctrl.GetForeign)
+	muxRouter.GET("/api/foreignupdatedbystkcode/{stkcode}", msctrl.GetForeignbyStkCode)
 	muxRouter.SERV(port)
 }

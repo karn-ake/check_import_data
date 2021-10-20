@@ -10,7 +10,7 @@ type ForeignData struct {
 	SecurityName string
 	SecurityId   int
 	DateOfRec    string
-	QtyAvail     int
+	QtyAvail     int64
 }
 
 type DBConfig struct {
