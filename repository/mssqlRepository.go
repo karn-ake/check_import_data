@@ -9,15 +9,6 @@ import (
 	//"strconv"
 )
 
-
-var (
-//	server   = "192.168.142.51"
-//	port     = 1433
-//	user     = "n2nthuat\\0138811"
-//	pass     = "@Liverp00l"
-//	database = "EBCGF_NOMURA"
-)
-
 type MssqlRepository interface {
 	GetSecurityData() ([]entity.SecurityData, error)
 	GetSecurityDatabyStkCode(stk string) (*entity.SecurityData, error)
